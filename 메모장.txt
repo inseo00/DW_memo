@@ -38,4 +38,4 @@ $ git config --global user.email "dldlstj6125@gmail.com"
 
 iP = 집 주소 (계속 변경됨)
 
- git commit = 업로드
+ git commit = 업로드 
