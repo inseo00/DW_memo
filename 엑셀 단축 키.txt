@@ -7,3 +7,4 @@
  전체 범위: 선택  Ctrl A
  닫기:  Ctrl F
  밑줄: Ctrl 4
+ 

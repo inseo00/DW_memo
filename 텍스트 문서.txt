@@ -32,8 +32,6 @@ SVN
            
  공공기관
  중앙시스템(한 곳에서 따로)
-
-
 $ git config --global user.email "dldlstj6125@gmail.com"
  git config --global user.name "inseo00"
 
