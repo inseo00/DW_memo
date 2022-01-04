@@ -1,0 +1,9 @@
+ 엑셀 셀 병합: ait + 1
+                         순서번호
+  (옵션에서 병합 가운데맞춤 추가한 다음 art + 순서 번호)
+ 줄 바꿈: Ait + Enter
+ 글씨 굵게: Ctrl + b
+ 잘라내기: Ctrl + X V
+ 전체 범위: 선택  Ctrl A
+ 닫기:  Ctrl F
+ 밑줄: Ctrl 4

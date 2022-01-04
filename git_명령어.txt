@@ -1,0 +1,6 @@
+1. SSH 키 생성
+    => ssh-keygen -t rsa -C "이메일 입력"
+
+2. github 사용자이름, 이메일 등록
+    => git config --global user.name "사용자 이름 입력"
+    => git config --global user.email "이메일 입력"
