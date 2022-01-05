@@ -144,4 +144,22 @@ ctrl 엔터 +
 순서
 from - where - select
 
+*** DDL(Date Definition Language)
+CREATE TABLE <table_name> :table 생성
+DROP TABLE <table_name> : table 삭제
+ALTER TABLE <table _name> : table 수정 (테이블 이름 변경할 때 씀)
+
+
+기술면접에 나옴
+*** DML(Data Manipulation Language) 데이터 조직 언어
+SELECT : 데이터 조회
+DELETE : 데이터 삭제
+UPDATE : 데이터 수정
+INSERT : 데이터 생성
+
+DCL (Data Control Language) 데이터 제어 언어
+GRANT : 특정 사용자에게 권한 부여
+REVOKE : 특정 사용자 권한 회수
+
+
 -----------------------------------
