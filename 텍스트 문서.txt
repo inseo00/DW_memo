@@ -79,7 +79,7 @@ F12 (개발자 도구)
 master : 제품으로 출시될 수 있는 브랜치
 
 ---------------------------------------------------
-
+강사님 ip : 192.168.0.39로 변경
 1/4
 
 라우터 = 와이파이
@@ -290,4 +290,105 @@ select
 
 그룹바이만 되는거만 셀렉트에 와야됨
 
+---------------------
 
+1/7
+
+데이터베이스 안에 테이블 안에 데이터
+
+            select를 이용해서 데이터 가져오기 (데이터 조작)
+ 6일에 배움   UPDATE 
+             insert
+ 아직안배움   DELETE 
+
+it계열에서 데이터베이스는 기초
+
+group by = 중복된 데이터를 제거하기 위함 
+(group)
+
+ename 은 group이 안됌
+group by 할 때는 select 절에 group이 되는 컬럼이 위치.
+
+select
+<컬럼 이름>
+from 테이블 이름
+where 조건 식
+group by 컬럼 이름
+
+having 사용할 함수
+sum, avg, min, max
+
+order by
+정렬할 컬럼 dese , asc
+
+order by 
+정렬할 컬럼의 순서써도 됌 (oeder by 2;)
+
+연산자는 where 절에 온다.
+관계 연산자 : !=, =, >, <, >=, <=
+논리 연산자 : and, or
+문자 연산자 : like
+(문자 연산자 ex : 이름에 A로 시작하는 사람을 조회하시오
+                 이름에 L이 2개 들어가는 사람을 조회하시오
+
+null < comm > : 데이터도 없고 아무것도 없는 상태
+not null 
+ex) where comm is not null 
+
+ex)
+1. 부서별 직책별 최대 급여와 인원 수
+2. 최소급여를 추출
+3. 10번 부서제외
+4. 인원 수는 3명 이하
+5. 인원 수가 적은 순서
+
+부서별, 직책별 (~~별은 group by)
+최대급여와 인원 수, 최소급여를 조회(select)
+10번 부서 제외 (where)
+인원수는 3명 이하 (having)
+인원 수가 적은 순서 (정렬) (order by)
+
+
+다중이 함수
+-group by
+sum, avg, min, max, count
+
+
+1. from (항상처음)
+2. where
+3. group by
+4. having
+5. select
+6. order by (항상 마지막)
+
+select
+DEPTNO,
+job,
+max(sal),
+count(*)
+from emp
+where 
+DEPTNO!=10
+goru
+
+null 항목 처리/ 임시로 항목에 넣기
+
+
+** ifnull : 데이터가 null인 행에 임의 데이터를 널는다(UPDATE하는게 아님)
+select
+ename,
+ifnull(comm, 100) *fake !
+from emp
+
+****Date_format
+
+날짜 함수
+select
+Date_format(HIREDATE, '%y')
+from emp
+
+
+년도, 월 구하기
+select
+Date_format(HIREDATE, '%y-%m')
+from emp
