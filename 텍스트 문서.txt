@@ -467,3 +467,61 @@ dept랑 emp 교집합 된 데이터만 가져옴
 
 ** ,로 추가하기 
  (and 사용 금지)
+
+ ㅡㅡㅡㅡㅡㅡㅡㅡ
+1/10
+
+
+join : 두 개이상의 테이블을 조회할 때
+
+조인방법 (2)
+
+1.
+select
+from emp as e, dept as d 
+where e.deptno = d.deptno
+
+
+2. 
+select
+from emp as e
+inner join dept as d
+on e.deptno = d.deptno
+inner join dw as dw
+on....
+where
+
+limit : 출력되는 결과 행의 수를 제한
+        사용률 높음
+
+* 조인 종류
+
+inner join(내부조인 혹은 조인)
+=> 두 테이블을 조회할 때, 두 테이블에 모두 지정한 데이터조회
+outer join(외부조인)
+두 테이블을 조회할 때, 1개의 테이블에만 데이터가 있어도 조회
+
+self join
+=> 자신이 자신과 조인, 1개의 테이블 사용
+
+** 외부 조인 종류
+
+1. LEFT : 왼쪽 테이블의 모든 값이 출력되는 조인
+2. RIGHT outer join : 오른쪽 테이블의 모든 값이 출력되는 조인
+3. full outer join : 왼쪽 또는 오른쪽 테이블에 모든 값이 출력
+
+
+** 문법
+
+select
+(컬럼 목록)
+from <첫번째 테이블 이름>
+(LEFT or RIGHT) join <두번째 테이블 이름>
+
+on (조인 조건)
+where
+
+언제 사용?
+ex) 쇼핑몰 사이트에서 회원가입은 했는데 구매이력이 없는 회원을 조회할 때
+ 
+ 
