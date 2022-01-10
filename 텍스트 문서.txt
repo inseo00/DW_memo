@@ -217,9 +217,10 @@ HIREDATE : 고용날짜
 SAL : 월급
 COMM : 보너스
 DEPTNO :부서번호
-job : 직업
-MGR : 해당 관리자
+job : 직업, 직위
 empno : 사원번호
+
+order by hiredate asc (입사일 기준으로 정.렬)
 
 조건 입력후 ctrl enter 꼭 누르기
 
@@ -310,12 +311,19 @@ ename 은 group이 안됌
 group by 할 때는 select 절에 group이 되는 컬럼이 위치.
 
 select
-<컬럼 이름>
-from 테이블 이름
-where 조건 식
-group by 컬럼 이름
+or : 조건 중 하나라도 만족(TRUE)하면 TRUE
 
-having 사용할 함수
+AND : 모드 조건을 만족해야 됌
+
+
+
+
+<컬럼 이름>
+from : 테이블 이름
+where : 조건 식
+group by : 컬럼 이름
+
+having : 사용할 함수
 sum, avg, min, max
 
 order by
@@ -933,3 +941,72 @@ ename
 from emp
 where 
 comm is null 
+
+서브 쿼리란?
+하나의 쿼리 문장 내에 포함된 또 하나의 커리
+
+**규칙
+
+1. 반드시 () 괄호로 묶음
+select
+(select)
+
+from a table
+
+2. 서브쿼리가 먼저** 실행된 후 외부쿼리와 비교/연산
+3. 서브쿼리가 가능한 곳
+3-1. select절 (스칼라 서브쿼리)
+
+(자주 씀)
+3-2. from 절 (인라인 뷰)
+
+3-3 where 절 (중첩 서브쿼리)
+3-4 having
+3-5 order by
+3-6 insert values
+3-7 update set (MYSQL 실행 X / 자주 안씀)
+
+4. 서브쿼리 종류 : 
+                 단일 서브쿼리,
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+다중형 서브쿼리, DELETE , 모델링 (table CREATE하는 작업) -> spring 시간에
+PK, FK 작업을 함
+테이블의 데이터 타입 -> 자바 수업시간에         
+
+
+--------------------------------------
+
+★ join ★
+조인을 이용해서 데이터를 가져와야 함
+
+1. join
+2.self join
+3. outer join
+
+=> 교집합 데이터를 찾아내야 함
+emp 테이블과 dept 테이블을 비교했을 때 deptno(부서 번호)
+
+e.ename as "사원 이름"
+d.dname as "부서 이름"
+
+select
+
+from emp as e
+inner join dept as d
+on e.deptno = d. deptno
+
+2-1. left
+2-2. right
+2-3.  full
+
+inner 기준으려 dept가 왼쪽에 있으면 left, 오른쪽에 있으면 right
+
+select
+*
+from dept as d LEFT join emp as e
+on d.deptno = e.deptno
+
+3. 셀프 조인
+특별한 문법이 없음 ( left,right 없음)
+같은 테이블 조인할 때
