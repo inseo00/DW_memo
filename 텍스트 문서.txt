@@ -837,7 +837,7 @@ and
 e.job = 'manager';
 
 --------------------------------------------------------
-4) 1983년 이후 입사한 사원의 보서수가 null이면 100을 주고 
+4) 1983년 이후 입사한 사원의 사수가 null이면 100을 주고 
   사원의 이름, 부서 이름, 직업을 조회
  select 
  e.ENAME as '사원이름',
@@ -1010,3 +1010,122 @@ on d.deptno = e.deptno
 3. 셀프 조인
 특별한 문법이 없음 ( left,right 없음)
 같은 테이블 조인할 때
+
+-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+1/12
+
+java
+변수
+
+1. 프로그램을 만들기 위해서 코딩하기
+2. 프로그램 데이터가 있으니까 변수라는 개념을 이용하여 데이터를 대입해야 됌.
+3. int (데이터 타입) X(변수이름)
+         = 정수형 데이터 ;
+
+ 변수를 많이 쓰면 자바 메모리가 찬다         
+
+위에서 아래로 읽고, 왼쪽에서 오른쪽으로 대입
+
+= 대입
+== 같다
+
+상황연산자 
+
+비고 연산자 
+
+public class Lol (
+     public static void main(stringl angs)
+) //if 만약에 //else(아니라면) 가정법
+int x = S;
+int y = S;
+if(x == y) (// 만약에 맞다면)
+{
+system.out.println("x랑 y는 같다");
+}else 
+{system.out.println("x랑 y는 다르다");
+}
+if(x != y) {
+    system.out.println("x랑 y는 다르다)};
+
+중 가로를 찍으면 세미클론 안 적어도 됨
+아닌 경우는 세미클론 찍어야 됨
+
+ex)
+
+package
+public class Lol{
+	//90점 초과 A, 80점 초과 B, 70점 초과 C, 70점 이하는 F
+	// 조건, else if 풀어볼 것
+
+	int score = 88; // B학점
+	if(score >= 90) {
+		System.out.println("당신의 학점은 !!! A!!!");
+	}else if(score <= 90 && score > 80) {
+		System.out.println"당신의 학점은 !!! B!!!");
+		else if (seore <= 80 && score > 70) {	
+			System.out.println9"당신의 학점은 !!! C!!!");
+		}else {
+			System.out.println"F당첨!!");
+	}
+
+
+    for(int i=1; i<=10; ++1) {
+		System.out.println"hello worid");
+	    }
+
+실행 순서
+1. int i=1 (초기문 or 선언문)
+ 
+
+2. i<=10; (조건 식)
+
+3. 코드들
+
+4. ++1) (반복 작업식)
+
+
+
+for(int i=0; i>10; ++i) {
+  (코드들...)
+
+
+int i=0 
+i를 1씩 증가시켜 10 미만까지 반복하겠다.
+for(int i=0; i<3; ++i){
+    (코드들...)
+}
+
+i를 3이 될 때까지 (거짓 될 때까지)  증가시킴 , 우리 눈에는 0이지만 컴퓨터는 3으로 인식함
+
+-------------------------------------------------
+1~10 까지 짝수 산출
+조건 for 사용
+
+	
+	package study;
+	
+	//1~10까지 짝수 산출
+	// 조건 for 사용
+	public class 반복문
+	public static void main(string[] engs) {
+		
+	for(int i=1; i<=10; ++i) {
+		int x = 10; /지역변수
+		int y = 5;
+		if((i%2) == 0) {
+		System.out.println"짝수는 ===> "+1);
+	    }
+	
+	}
+
+
+
+
+	//1~10까지의 짝수 판별
+		for(int num=1;num<=10;++num) {
+			if (num%2==0) {
+				System.out.println(num+" : 짝수입니다.");
+			}else {
+				System.out.println(num+" : 홀수입니다.");
+			}
+		}
