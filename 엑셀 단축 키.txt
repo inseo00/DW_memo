@@ -8,3 +8,5 @@
  닫기:  Ctrl F
  밑줄: Ctrl 4
  
+전에 단계로 되돌리기  : Ctrl z
+앞에 단계로 되돌리기 : Ctrl y
