@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="customers">
+      <thead>
+        <tr>
+          <th>시간</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 ~ 09:50</td>
+          <td>SQL</td>
+          <td colspan="3">JAVA</td>
+          <td>SQL</td>
+        </tr>
+
+        <tr>
+          <td>10:00 ~ 10:50</td>
+          <td colspan="5">HTML & CSS</td>
+        </tr>
+        <tr>
+          <td>11:00 ~ 11:50</td>
+          <td colspan="2">SQL</td>
+          <td>JAVA</td>
+          <td colspan="2">SQL</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>출장</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>출장기간</th>
+          <th>출장 비용</th>
+          <th>출장 준비물</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>02.10 ~ 02.16</td>
+          <td>240,000</td>
+          <td>노트북</td>
+        </tr>
+
+        <tr>
+          <td>02.20 ~ 02.24</td>
+          <td>180,000</td>
+          <td>가방</td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="">
+      아이디 : <input type="text" /> 이메일 : <input type="email" /> 비밀번호 :
+      <input type="password" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
