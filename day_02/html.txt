@@ -1,3 +1,5 @@
+** 깃허브 Add file - Upload file - Drag 칸에 파일 드래그
+
 !누르고 tab
 
 ex) input 태그가 3개 생김
@@ -97,3 +99,33 @@ position 디폴트 값이 static
   </body>
   <html></html>
 </html>
+
+________________________________________________________________________________________
+
+2/8
+
+디폴트 값 static : 움직일 수 없음
+
+relative : 움직일 수 있음
+조건) 원래 자기 자리에서 움직임
+
+absolute : 마음대로 움직임
+(개인주의)
+
+fixed : 고정된 위치 (상단 아이콘)
+
+만약에 부모 태그가 있다면 부모 태그 기준으로 움직임.
+조건 : 부모가 relative일 때만 움직인다
+
+
+html 수업들을 때 세팅
+! Enter
+ <div class="container">
+ </div>
+
+
+*** 중요 CSS  ***
+
+ 1. position
+ 2. margin, padding, border-box
+ 3. ☆ flex
