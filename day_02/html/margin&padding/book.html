@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+      /*자바스크립트 메소드*/
+      function doSuccess() {
+        alert('예약 완료 !');
+      }
+
+      function doFail() {
+        alert('예약 취소 !');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="book-from">
+        <input type="text" placeholder="아이디를 입력하세요.." />
+        <input type="password" placeholder="비밀번호를 입력하시오..">
+        <input type="email" placeholder="이메일을 입력하시오..">
+         <label for="to">날짜</label>
+        <input type="date" />
+        <input type="time" />
+        <input
+          class="true"
+          type="button"
+          value="예약 완료"
+          onclick="doSuccess();"
+        />
+      </input>
+        <input
+          class="false"
+          type="button"
+          value="예약 취소"
+          onclick="doFail();"
+        />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
