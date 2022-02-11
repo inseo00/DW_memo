@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 모양 바뀌는 버튼 만들기 -->
+    <!-- 네모에 마우스 갖다대면 동그라미로 변함  -->
+    <style>
+      .container {
+        width: 800px;
+        height: 800px;
+        background: rgb(202, 255, 242);
+      }
+      .container:hover {
+        background: rgb(255, 197, 197);
+        border-radius: 50%;
+        border-bottom: 20px solid rgb(158, 213, 255);
+        cursor: pointer;
+      }
+
+    </style>
+     <script>
+      //자바스크립트 메소드
+      function doSuccess() {
+        alert('버튼 선택');
+      }
+      function doFail() {
+        alert('버튼 취소!');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container"></div>
+    <!-- 버튼 만들기  -->
+    <input type="button" value="클릭하시오" />
+    <input 
+    class="ture"
+    type="submit"
+    value="버튼 선택"
+    onclick="doSuccess();"
+    />
+    <input 
+    class="false"
+    type="submit"
+    value="버튼 취소"
+    oneclike="doFail();"
+    />
+    </div>
+    </div>
+  </body>
+</html>
