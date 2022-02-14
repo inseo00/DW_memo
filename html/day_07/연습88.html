@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: cyan;
+            padding: 40px 40px;
+            align-items: center;
+        }
+        .logo p {
+            font-size: 24px;
+        }
+        a. {
+            text-decoration: none;
+        }
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+        .menu li {
+            padding: 8px 12px;
+        }
+        .menu li:hover {
+        background-color: cornflowerblue;
+        border-radius: 4px;
+        }
+        .icon p {
+            color: darkturquoise;
+        }
+        .card img {
+            width: 80px;
+            height: 60px;
+        }
+        .container {
+            width: 800px;
+            height: 800px;
+            background-color: lightskyblue;
+        }
+        .container:hover {
+            background: rgb(215, 243, 255);
+          border-radius: 50%;
+          border-bottom: 20px solid rgb(201, 253, 255);
+          cursor: pointer;
+        }
+    </style>
+    <script>
+        //자바 스크립트 메소드
+        function doSuccess() {
+            alert('버튼 선택');
+        }
+            function doFail(){
+                alert('버튼 취소')
+            }
+        
+    </script>
+</head>
+<div>
+    <div class="container">
+<input type="button" value="클릭">
+<input class="true"
+type="submit"
+value="버튼 선택"
+onclick="doSuccess();"
+/>
+<input class="false"
+type="submit"
+value="버튼 취소"
+onclick="doFail();"
+/>
+    </div>
+    </div>
+
+</body>
+</html>

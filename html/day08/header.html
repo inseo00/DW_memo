@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(208, 255, 255);
+        padding: 40px 40px;
+        align-items: center;
+      }
+      .logo p {
+        font-size: 24px;
+      }
+      /* 밑줄 없애기 */
+      a {
+        text-decoration: none;
+      }
+      .menu {
+        display: flex;
+        list-style: none;
+      }
+      .menu li {
+        padding: 8px 12px;
+      }
+      .menu li:hover {
+        background-color: rgb(186, 252, 230);
+        border-radius: 4px;
+      }
+      .icon p {
+        /* icon 클릭했을 때 색깔 */
+        color: rgba(196, 255, 196, 0.467);
+      }
+      .card img {
+        width: 80px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="header"> <div> = <header></header> -->
+      <header>
+        <div class="logo">
+          <p>선화동 맛집 사이트</p>
+        </div>
+        <ul class="menu">
+          <!-- (li>a)*5 -->
+          <li><a href="">국밥 맛집</a></li>
+          <li><a href="">커피 맛집</a></li>
+          <li><a href="">국수 맛집</a></li>
+          <li><a href="">고기 맛집</a></li>
+          <li><a href="">중국집 맛집</a></li>
+        </ul>
+        <div class="icon">아이콘 영역</div>
+      </header>
+      </div>
+    </div>
+  </body>
+</html>
