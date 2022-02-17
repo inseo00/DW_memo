@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .black {
+        width: 1000px;
+        height: 300px;
+        background-color: black;
+        margin: 20px auto 0;
+        margin-top: 100px;
+      }
+      .white {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        position: absolute;
+        left: 380px;
+        /* h1 : white 안에 있는 h1 높이 조절 */
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- black 태그 안에 white 태그 넣기 
+    white 태그 안에 h1 태그 넣기 -->
+    <div class="container">
+      <div class="black">
+        <div class="white">
+          <h1>안녕</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+
+DDL
+DDL(auto commit)
+1. CREATE
+=> 테이블 생성
+CREATE TABLE student(
+   id INT (11) NOT NULL,
+name VARCHAR(20) NOT NULL,
+height INT(5),
+age INT(5) DEFAULT 0,
+CREATE_at DATETIME 
+);
+
+* 나이를 인서트 하지않으면 자동으로 0이 되어있음
+2. DROP
+3. ALTER
+

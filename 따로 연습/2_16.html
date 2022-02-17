@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(161, 161, 255, 0.83);
+      }
+      .side-nav {
+        position: fixed;
+        padding: 12px 30px;
+        top: 0px;
+        left: 0px;
+      }
+      .nav-links {
+        list-style: none;
+      }
+      .nav-links li {
+        padding: 10px 10px;
+      }
+      .nav-links li:hover {
+        background-color: rgb(255, 255, 255);
+        /* border-radius : 애니메이션 효과 적용시 버튼 테두리가 둥글게 변함  */
+        border-radius: 40px;
+        /* transition 
+           애니메이션 효과가 일정 시간에 걸쳐서 다양한 방법으로 진행
+           애니메이션 속도 조절 */
+        transition: 2.6s;
+      }
+      .nav-links a {
+        /* text-decoration : none 
+             글자 밑줄 없애기      */
+        text-decoration: none;
+        padding: 10px 14px;
+        color: #fff;
+      }
+      .nav-links li a i {
+        font-size: 22px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="side-nav">
+          <ul class="nav-links">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i>HOME</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-comment-dots"></i>Message</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

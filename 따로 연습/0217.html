@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .blue {
+        width: 1300px;
+        height: 1300px;
+        background-color: blue;
+        margin: 150px 2600px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .red {
+        width: 900px;
+        height: 900px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .white2 {
+        width: 180px;
+        height: 700px;
+        background-color: white;
+      }
+      .green {
+        width: 1300px;
+        height: 1300px;
+        /* 북 동 서 남  */
+        margin: -1260px 800px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(
+          circle at 33% 100%,
+          #fed373 4%,
+          #f15245 30%,
+          #d92e7f 62%,
+          #9b36b7 85%,
+          #515ecf
+        );
+        border-radius: 20%;
+      }
+      .white {
+        width: 994px;
+        height: 994px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 24%;
+        border: 88px solid #fff;
+      }
+      .b {
+        width: 540px;
+        height: 540px;
+
+        border-radius: 50%;
+        border: 88px solid #fff;
+      }
+      .c::after {
+        /* after (특정 기호 넣기) : 안에 º 기호 넣기 */
+        position: absolute;
+
+        content: '';
+        width: 60px;
+        height: 60px;
+        border: 24px solid #fff;
+        border-radius: 50%;
+        margin: -340px 740px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="blue">
+        <div class="red">
+          <div class="white2"></div>
+          <div class="white2"></div>
+          <div class="white2"></div>
+        </div>
+      </div>
+      <div class="green">
+        <div class="c"></div>
+        <div class="white">
+          <div class="b"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

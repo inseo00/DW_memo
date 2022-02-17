@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 옆으로 header 목록 만들기 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .side-nav {
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #0d74f5;
+        /* fixed : 스크롤 내릴 때 고정 */
+        position: fixed;
+        padding: 20px 30px;
+      }
+      .nav-links {
+        list-style: none;
+      }
+      .nav-links li {
+        /* 글씨 간격 넓히기 */
+        padding: 10px 10px;
+      }
+      .nav-links li:hover {
+        /* 버튼 효과 */
+        background-color: rgba(153, 255, 255, 0.761);
+        border-radius: 6px;
+        transition: 0.8s;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 14px;
+      }
+      .nav-links li a i {
+        font-size: 22px;
+        margin-right: 20px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ec2e6610a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="side-nav">
+          <ul class="nav-links">
+            <!-- (li>a)*3 -->
+            <!-- header 아이콘 넣기 -->
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i>HOME</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-comment-dots"></i>Message</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

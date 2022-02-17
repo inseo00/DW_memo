@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card-container {
+        display: flex;
+        /* width, height : 배경 크기 */
+        width: 1200px;
+        height: 375px;
+        margin: 100px auto;
+        /* margin : 위 아래, 오른쪽 왼쪽 */
+      }
+      .item {
+        position: relative;
+        height: 100%;
+        padding: 25px;
+        color: white;
+        /* item 태그 하위 글자는 모두 white로 변경 됨 */
+        flex: 1;
+        /* 아이템에 flex:1을 하면 아이템들이 동일한 크기를 가짐  */
+
+        /* 칸 미는 시간  */
+        transition: 0.6s;
+      }
+
+      /* 이름 짓기 어려울 때 :nth-child(1) */
+      .item:nth-child(1) {
+        /* background-color 뒤에 배경 색  */
+        background-color: rgba(33, 88, 208, 0.871);
+      }
+      .item:nth-child(2) {
+        background-color: rgb(208, 51, 82);
+      }
+      .item:nth-child(3) {
+        background-color: rgba(208, 195, 19, 0.939);
+      }
+      .item h2 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        /* 글자 가운데 정렬 */
+      }
+      .caption {
+        display: none;
+        font-size: 12px;
+        margin: 28px 0;
+        max-width: 230px;
+      }
+      .item img {
+        width: 200px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .item:hover {
+        /* 옆으로 미는 효과 */
+        flex-grow: 2;
+      }
+      .item:hover .caption {
+        /* 글씨 다시 보이게하기 */
+        display: block;
+      }
+      .caption button {
+        /* 버튼 색깔 */
+        border: 1px solid white;
+        border-radius: 30px;
+        background: transparent;
+        /* padding : 부모 자식 태그 간격 item조절 */
+        padding: 8px 18px;
+        color: antiquewhite;
+        font-size: 14px;
+        cursor: pointer;
+        /* p 태그 거리 띄우기  margin-top */
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <div class="item">
+          <h2>크로스 핏</h2>
+          <div class="caption">
+            <p>20회 : 480,000원</p>
+            <button>예약</button>
+          </div>
+          <img src="img1.png" alt="" />
+        </div>
+        <div class="item">
+          <h2>웨이트 훈련</h2>
+          <div class="caption">
+            <p>18회 : 340,000원</p>
+            <button>예약</button>
+          </div>
+          <img src="img2.png" alt="" />
+        </div>
+        <div class="item">
+          <h2>요가</h2>
+          <div class="caption">
+            <p>20회 : 280,000원</p>
+            <button>예약</button>
+          </div>
+          <img src="img3.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
