@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 배경색 */
+      .container {
+        background-color: rgb(211, 243, 255);
+        margin: 50px auto 0;
+      }
+      .card {
+        /* ☆ display ☆ : inline-block (가로배치) */
+        /* width 가로 넓이 */
+        /* height 세로 길이 */
+        display: inline-block;
+        margin: 12px;
+        border-radius: 8px;
+        height: 800px;
+        width: 280px;
+        overflow: hidden;
+        /* 그림자 */
+        box-shadow: 0 20px 24px rgb(250, 252, 137);
+        padding: 5px;
+        transform: scale(0.86);
+        transition: 0.4s;
+      }
+      /* ☆ hover ☆ 마우스 모양, 속도 바꾸기 */
+      .card:hover {
+        cursor: pointer;
+        /* transfrom 돌아오는 시간 */
+        transform: scale(1.5);
+        /* background-color : 배경색 */
+        background-color: rgba(255, 223, 242, 0.638);
+      }
+      /* card img : 사진 크기 */
+      .card img {
+        width: 280px;
+        height: 280px;
+      }
+      /* h1 제목 size */
+      .text-wrap {
+        padding: 15px;
+        text-align: center;
+      }
+      .text-wrap h1 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .text-wrap p {
+        line-height: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 컨트롤 + 스페이스바 동시에 누르면 이미지 삽입   -->
+    <!-- h1 : 제목, p : 소 제목 -->
+    <div class="container">
+      <div class="card">
+        <img src="../card/파이리.jpg" alt="" />
+        <div class="text-wrap">
+          <h1>파이리</h1>
+          <p>파이리~</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="꼬북이.jpg" alt="" />
+        <div class="text-wrap">
+          <h1>꼬북이</h1>
+          <p>꼬북 꼬북~</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="이상해씨.jpg" alt="" />
+        <div class="text-wrap">
+          <h1>이상해씨</h1>
+          <p>씨잉~</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
