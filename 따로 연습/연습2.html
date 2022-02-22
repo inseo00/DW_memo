@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: rgba(124, 222, 255, 0.9);
+        margin: 50px auto 0;
+      }
+      .card {
+        display: flex;
+        margin: 12px;
+        border-radius: 8px;
+        height: 600px;
+        width: 500px;
+        overflow: hidden;
+        box-shadow: 0 20px 24px rgba(160, 231, 255, 0.9);
+        padding: 4px;
+        transform: scale(0.4);
+        transition: 0.2s;
+      }
+      .card:hover {
+        cursor: pointer;
+        transform: scale(0.8);
+        background-color: rgba(146, 255, 255, 0.755);
+      }
+      .card img {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 400px;
+        height: 600px;
+      }
+      .text-wrap {
+        padding: 15px;
+        text-align: center;
+      }
+      .text-wrap h1 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .text-wrap p {
+        font-size: 20px;
+        line-height: 3;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        outline: none;
+      }
+      .page {
+        width: 1440px;
+        margin: 0 auto;
+        border: 4px solid rgba(40, 144, 255, 0.652);
+      }
+      header {
+        margin-top: 0;
+        width: 100;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header > h2 {
+        margin-left: 20px;
+      }
+      header > nav {
+        width: 600px;
+        height: 100%;
+      }
+      header ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      header ul > li {
+        font-size: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .background {
+        margin-top: -50px;
+        margin-bottom: -30px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-color: rgb(221, 255, 204);
+        background-image: linear-gradient(
+            rgba(160, 231, 255, 0.9) rgba(246, 255, 243, 0.9)
+          ),
+          url(../img/1.jpg);
+        background-position: center;
+      }
+      .book-from {
+        margin-left: 300px;
+        margin-top: 60px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div class="page">
+          <header>
+            <h2>Myselt</h2>
+            <nav>
+              <ul>
+                <li><a href="#">Food</a></li>
+                <li><a href="">Hobby</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Dream</a></li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+        <div class="book-from">
+          <label for="from">출발지</label>
+          <input type="text" id="from" placeholder="출발지 입력.." />
+
+          <label for="to"> 도착지</label>
+          <input type="text" id="from" placeholder="도착지를 입력.." />
+
+          <label for="to"> 출발 시간</label>
+          <input type="time" />
+
+          <label for="to">도착 시간</label>
+          <input type="time" />
+          <input
+            class="true"
+            type="button"
+            value="예약 완료"
+            onclick="doSuccess();"
+          />
+          <input
+            class="flase"
+            type="button"
+            value="예약 취소"
+            onclick="doFail();"
+          />
+        </div>
+        <div class="card">
+          <img src="../img/자두.jpg" alt="" />
+          <div class="text-wrap">
+            <h1>자두</h1>
+            <p>자두</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/자두동생.jpg" alt="" />
+          <div class="text-wrap">
+            <h1>자두</h1>
+            <p>동생</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/자두엄마.jpg" alt="" />
+          <div class="text-wrap">
+            <h1>자두</h1>
+            <p>엄마</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
