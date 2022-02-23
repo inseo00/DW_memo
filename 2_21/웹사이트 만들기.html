@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        outline: none;
+      }
+      .page {
+        width: 1440px;
+        margin: 0 auto;
+      }
+      header {
+        width: 100;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header > h2 {
+        margin-top: 36px;
+        margin-left: 20px;
+      }
+      header > nav {
+        margin-top: 32px;
+        width: 600px;
+        height: 80%;
+      }
+      header ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      header ul > li {
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        /* Myself  margin-top (높낮이)
+           font-size (글씨 크기)*/
+        padding-right: 800px;
+        margin-top: 30px;
+        font-size: 25px;
+      }
+      .background {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(190, 255, 255);
+        background-image: linear-gradient(
+          rgba(181, 249, 255, 0.809),
+          rgba(210, 230, 255)
+        );
+        background-position: center;
+      }
+
+      .card {
+        margin-top: -500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        height: 160px;
+        width: 160px;
+        overflow: hidden;
+        padding: 280px;
+        transform: scale(1.2);
+        transition: 0.4s;
+      }
+      .card img {
+        width: 200px;
+        height: 200px;
+      }
+      .card:hover {
+        cursor: pointer;
+        transform: scale(1);
+      }
+      .text-box {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page">
+        <header>
+          <h1>Myself</h1>
+          <nav>
+            <ul>
+              <li><a href="#">Food</a></li>
+              <li><a href="">Hobby</a></li>
+              <li><a href="">Game</a></li>
+              <li><a href="">Dream</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div class="background">
+      <div class="text-box">
+        <h1><a href="index.html">web</a></h1>
+        <li><a href="1.html">html</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="4.html">Node.js</a></li>
+        <li><a href="5.html">Solidity</a></li>
+        <li><a href="6.html">MYSQL</a></li>
+        <li><a href="7.html">React</a></li>
+        <h2>Html</h2>
+        <p>배우는 중..</p>
+      </div>
+      <div style="float: left; margin-right: -10px">
+        <div class="card">
+          <img src="../html/img/1.jpg" alt="center" />
+        </div>
+      </div>
+      <div style="float: left; margin-right: -10px">
+        <div class="card">
+          <img src="../html/img/숲.jpg" alt="center" />
+        </div>
+      </div>
+      <div style="float: left; margin-right: -10px">
+        <div class="card">
+          <img src="../html/img/3.jpg" alt="center" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
