@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+.main{
+  grid-area: main;
+}
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        outline: none;
+
+      }
+      header {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      header > nav {
+        margin-top: 32px;
+        width: 600px;
+        height: 80%;
+      }
+      header ul {
+        display: flex;
+      }
+      header li {
+        position: relative;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      h2 {
+        /* Website  margin-top (높낮이)
+           font-size (글씨 크기)*/
+        margin-left: 20px;
+        margin-top: 15px;
+        padding-right: 1302px;
+        font-size: 25px;
+      }
+      /*  */
+      .background {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(190, 255, 255);
+        background-image: linear-gradient(
+          rgba(181, 249, 255, 0.809),
+          rgba(210, 230, 255)
+        );
+        background-position: center;
+        display: flex;
+      }
+
+      .text-box {
+        /* padding-top : web 세로 간격 */
+        
+        padding-left: 22px;
+        padding-top: 60px;
+      }
+
+      .text-box h1 {
+        /* margin-bottom : html Css.. 세로간격  */
+        margin-bottom: 15px;
+      }
+    .a:hover {
+    
+      background-color: rgba(217, 255, 248, 0.474);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Website</h2>
+        <ul class="a">
+          <li><a href="#">Naver</a></li>
+          <li><a href="">Googel</a></li>
+          <li><a href="">Daum</a></li>
+          <li><a href="">Nate</a></li>
+          <li><a href="">kakao</a></li>
+          <li><a href="">twitter</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+        <div class="icon"></div>
+      </header>
+      <div class="main"></div>
+      <div class="background">
+        <div class="text-box">
+          <h1><a href="index.html">web</a></h1>
+          <li><a href="1.html">html</a></li>
+          <li><a href="2.html">CSS</a></li>
+          <li><a href="3.html">JavaScript</a></li>
+          <li><a href="4.html">Node.js</a></li>
+          <li><a href="5.html">Solidity</a></li>
+          <li><a href="6.html">MYSQL</a></li>
+          <li><a href="7.html">React</a></li>
+        </div>
+        
+<input type="checkbox" id="keepLogin" name="keepLogin">
+
+<label for="keepLogin"><span>로그인 상태 유지</span></label>
+    </div>
+  </body>
+</html>
+
+
+<!-- 1.  구역 나누기 
+     2. 로그인 체크 박스 위치 변경
+     3. 로그인 폼 만들기 (왼쪽 위 모서리)-->
