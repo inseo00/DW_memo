@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section {
+        margin: 50px auto 0;
+        width: 90%;
+        height: 2000px;
+      }
+      .title {
+        width: 100%;
+        height: auto;
+        /*  부모의 height:auto 이면 자식 height에 맞춤 */
+
+        margin-bottom: 30px;
+      }
+      .title h2 {
+        font-size: 34px;
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+        /* justify-content : 아이템과 아이템 간격 조정 */
+      }
+      .item {
+        padding: 2% 6%;
+        /* padding : item 안에 글씨 간격 띄우기 */
+
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+      .item p {
+        font-size: 22px;
+      }
+      .item h1 {
+        margin: 20px 0 40px;
+        font-size: 44px;
+        font-weight: 500;
+      }
+      .item h2 span {
+        font-size: 18px;
+      }
+      .item ul {
+        text-align: left;
+        margin: 20px 0;
+      }
+      .item ul li {
+        margin: 15px 0;
+      }
+      .item button {
+        width: 100%;
+        padding: 14px 0;
+        background: transparent;
+        /* background: transparent; : 배경 투명하게 */
+
+        color: white;
+        font-size: 15px;
+        border: 1px solid rgb(82, 82, 255);
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 30px auto;
+        /* auto : 버튼 가운데 위치 */
+
+        transition: background 0.5s;
+      }
+      .item button:hover {
+        background-color: rgba(174, 255, 251, 0.842);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="title">
+          <h2>Choose your plan</h2>
+        </div>
+        <div class="row">
+          <div class="item">
+            <p>Starter</p>
+            <h1>19$ <span>/month</span></h1>
+            <ul>
+              <li>1. Wedsite</li>
+              <li>2. 10 GB Disk Space</li>
+              <li>3. Free Email Address</li>
+              <li>4. Basic Wed Builder</li>
+              <li>No SSl Certificate</li>
+              <li>Limited Support</li>
+            </ul>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="item">
+            <p>Starter</p>
+            <h1>19$ <span>/month</span></h1>
+            <ul>
+              <!-- ul li 태그 : 글자 앞에 º 표시 -->
+              <li>1. Wedsite</li>
+              <li>2. 10 GB Disk Space</li>
+              <li>3. Free Email Address</li>
+              <li>4. Basic Wed Builder</li>
+              <li>No SSl Certificate</li>
+              <li>Limited Support</li>
+            </ul>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="item">
+            <p>Starter</p>
+            <h1>19$ <span>/month</span></h1>
+            <ul>
+              <li>1. Wedsite</li>
+              <li>2. 10 GB Disk Space</li>
+              <li>3. Free Email Address</li>
+              <li>4. Basic Wed Builder</li>
+              <li>No SSl Certificate</li>
+              <li>Limited Support</li>
+            </ul>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
