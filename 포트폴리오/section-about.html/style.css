@@ -1,0 +1,161 @@
+/* root : 최고 권위 (최고 권한으로 모든게 가능함) */
+:root {
+  /* 자주 사용하는 Color 모음 */
+  /* 자주 사용하는 Color에 변수이름을  만듦
+    변수이름을 활용함 */
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+  --borderColor: #c1c1c1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h3 ~ h6 공통 처리(전역 변수개념) */
+h3,
+h6 {
+  /* font-family : 글씨 폰트 지정 */
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+}
+
+.section {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.project-container {
+  width: 1200px;
+  /* 위 아래 X, 오른쪽 왼쪽 자동으로 맞추기 */
+  margin: 0 auto;
+}
+
+.project-container h3 {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  gap: 24px;
+  /* padding : 3%; */
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  /* object-fit : 사진 깨짐 방지 */
+  object-fit: cover;
+}
+
+.post-preview {
+  background-color: var(--secondaryColor);
+  padding: 5%;
+}
+.post-preview h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.post-preview p {
+  color: #4b5156;
+  font-size: 14px;
+  margin: 14px 0;
+}
+
+.post-preview a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+.post {
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  box-shadow: -2px 7px 12px -9px rgba(0, 0, 0, 0.75);
+}
+
+.post:hover {
+  transition: 2.1s;
+  background-color: rgb(112, 196, 251);
+}
+
+.main-container{
+  width: 1200px;
+  height: 615px;
+  margin: 0 auto;
+}
+.about-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.about-me{
+  width: 550px;
+  height: auto;
+}
+.about-me p{
+  /* margin : 문단간격 */
+  margin: 16px;
+}
+
+.about-me h4{
+ font-size: 24px;
+ margin: 32px 0;
+}
+
+
+/* section-about.html CSS */
+
+.skills{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f0ead6;
+  border-radius: 10px;
+}
+
+.skills ul{
+ list-style: none;
+ padding-left: 40px;
+ padding: 16px 0;
+}
+.skills ul li{
+  color: black;
+}
+
+.social-links {
+  width: 550px;
+  height: auto;
+}
+
+.social-links img{
+
+  width: 100%;
+  border-radius:5px;
+  height: auto;
+  /* object-fit : 사진 깨짐 방지 */
+  object-fit: cover;
+}
+
+.social-links h3{
+text-align: center;
+margin: 28px 0;
+font-size: 28px;
+}
+
+.github{
+  text-align: center;
+}
+
+.github a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #17a2b8;
+}
+
