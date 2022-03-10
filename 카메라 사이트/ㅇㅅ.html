@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .product-main{
+            width: 100%;
+            height: 85px;
+            background-color: black;
+            position: relative;
+        }
+        .img-main{
+            position: absolute;
+            top: 30px;
+            left: 5px;
+        }
+        .card-container {
+            width: 1000px;
+            height: 400px;
+            background: #ccc;
+            margin: 220px auto;
+            display: flex;
+        }
+
+        .col{
+            height: 100%;
+            flex: 1;
+            color: #fff;
+            padding: 25px;
+            position: relative;
+            transition:  0.6s;
+            box-shadow: 5px 5px 10px 0;
+        }
+        .col:nth-child(1){
+            background: transparent;
+            border: 2px solid black;
+        }
+
+        .col:nth-child(2){
+            background: transparent;
+            border: 2px solid black;
+        }
+        .col:nth-child(3){
+            background: transparent;
+            border: 2px solid black;
+        }
+        .col:nth-child(4){
+            background: transparent;
+            border: 2px solid black;
+        }
+        h2{
+            text-align: left;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .caption button{
+            border: 1px solid #fff;
+            border-radius: 30px;
+            background: transparent;
+            outline: none;
+            padding: 8px 18px;
+            color: #fff;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .col img{
+            width: 200px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .col:hover{
+            flex-grow: 4.5;
+            background-color: #007aff;
+            box-shadow: 5px 5px 10px 0;
+        }
+
+        .col:hover .caption{
+            display: block;
+        }
+
+        .col:hover h2{
+            text-align: left;
+        }
+        .last{
+            width: 100%;
+            height: 100vmax;
+            padding: 20px;
+            background-color: black;
+            justify-content: left;
+        }
+        .last pre{
+            font-size: 21px;
+            font-weight: 200;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-main">
+            <img  class="img-main" src="logo.svg" alt="">
+        </div>
+        <div class="card-container">
+            <div class="col">
+                <h2>Audio</h2>
+                <div class="caption">
+              <p>
+             Strength does not come from the physical capacity. 
+             It comes from an indomitable will.
+             </p>
+             <button type="button">더 보기</button>
+                </div>
+                <img src="main_prod_audio.224ca686.png" alt="">
+             </div>
+
+
+             <div class="col">
+                <h2>Camera</h2>
+                <div class="caption">
+                    <p>
+                        Strength dose not come from the physical capacity.
+                        It comes from an indomitable will.
+                    </p>
+                    <button type="button">더 보기</button>
+                </div>
+                <img src="main_prod_camera.24473fcf.png" alt="">
+               </div>
+            
+            
+            <div class="col">
+                <h2>PlayStaion</h2>
+                <div class="caption">
+                    <p>Strength dose not come from the physical capacity.
+                        It comes from an indomitable will.
+                    </p>
+                    <button type="button">더 보기</button>
+                </div>
+                <img src="main_prod_vcamera.7e8353a1.png" alt="">
+            </div>
+        </div>
+        <footer>
+            <div class="last">
+             <pre>
+               There are many products with excellent camera performance and good value for money, It can hold over 100 GB of high-definition photos and videos And it's on sale right now,
+               The former address has been changed. Please come to the 4th floor of Samsung Center, Shintanjin-ro so buy it quickly. It's 50% off, If you would like to receive the product,
+               please contact us here → floor tel: 02-8984-9078 ( Address: Daejeon  Daedeok-gu Sintanjin-ro 28beon-gil 88 Samsung Center 4th / Don't interpret what I said, 40 minutes befor)
+                </pre>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

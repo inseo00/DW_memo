@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sony</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      width: 100%;
+      height: 80px;
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      background-repeat: no-repeat;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .nav li {
+      margin: 25px;
+    }
+    .nav li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 900;
+    }
+    .logo {
+      color: white;
+    }
+    .icon {
+      color: wheat;
+    }
+
+    /*이미지 관련 CSS */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1000px;
+      height: 400px;
+      margin: 100px auto;
+    }
+    .caption button {
+      border: 3px solid lightgrey;
+      border-radius: 30px;
+      background-color: transparent;
+      color: lightgrey;
+      padding: 8px 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 14px;
+      box-shadow: 5px 5px 10px 0;
+    }
+    .item:nth-child(1) {
+      background-color: transparent;
+      margin-right: 70px;
+    }
+    .item:nth-child(2) {
+      background-color: transparent;
+      margin-right: 70px;
+    }
+    .item:nth-child(3) {
+      background-color: transparent;
+      margin-right: 70px;
+    }
+
+    /*이미지 관련 CSS */
+    .item {
+      flex: 1;
+      height: 100%;
+      padding: 25px;
+      color: black;
+      position: relative;
+    }
+    .item:hover {
+      flex-grow: 4.5;
+      transition: 0.5s;
+      box-shadow: 5px 5px 10px 0;
+    }
+    /*마우스 효과 줄 때 글씨 보임*/
+    .item:hover .caption {
+      /*none의 반대 block*/
+      display: block;
+    }
+
+    .item h2 {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      padding-bottom: 35px;
+    }
+    .item p {
+      font-weight: 700;
+      text-align: center;
+    }
+    .caption {
+      display: none;
+    }
+    .item img {
+      width: 250px;
+      position: absolute;
+      right: 35px;
+    }
+
+    /*이미지 관련 CSS */
+    .caption {
+      display: none;
+      font-size: 12px;
+      margin: 28px 0;
+      max-width: 230px;
+    }
+    footer {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="logo.cae2c042.svg" alt="" />
+        </div>
+        <ul class="nav">
+          <li><a href="#">스토어 추천 제품</a></li>
+          <li><a href="#">제품</a></li>
+          <li><a href="#">기획전</a></li>
+          <li><a href="#">멤버쉽</a></li>
+          <li><a href="#">고객 서비스</a></li>
+        </ul>
+        <div class="icon">아이콘</div>
+      </header>
+      <div class="card-container">
+        <div class="item">
+          <h2>Camera</h2>
+          <div class="caption">
+            <p>Sony Camera</p>
+            <button>구매</button>
+          </div>
+          <img src="main_prod_camera.24473fcf.png" alt="" />
+        </div>
+        <div class="item">
+          <h2>Audio</h2>
+          <div class="caption">
+            <p>Sony Audio</p>
+            <button>구매</button>
+          </div>
+          <img src="main_prod_audio.224ca686.png" alt="" />
+        </div>
+
+        <div class="item">
+          <h2>PlayStaion</h2>
+          <div class="caption">
+            <p>Sony PlayStaion</p>
+            <button>구매</button>
+          </div>
+          <img src="main_prod_ps.e4346725.png" alt="" />
+        </div>
+
+        <div class="item">
+          <h2>video Camera</h2>
+          <div class="caption">
+            <p>Sony video Camera</p>
+            <button>구매</button>
+          </div>
+          <img src="main_prod_vcamera.7e8353a1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        사업장주소 : 서울특별시 영등포 24F사업자 등록번호 : 106-81-23810
+        통신판매번호 2012-서울영등포-1038 소니코리아㈜대표이사 : Okura
+        Kikuo개인정보관리책임자 : Ok : 소니코리아 고객센터 15880911E-MAIL :
+        cshelp@sony.co.krCopyright © Sony Korea Corporation. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
