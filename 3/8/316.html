@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .popup {
+      position: relative;
+      width: 1000px;
+      height: 300px;
+      background-color: #777;
+      margin: 100px auto;
+    }
+    .close {
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+    }
+    .container {
+      width: 500px;
+      height: 200px;
+      margin: 50px auto;
+    }
+
+    .button {
+      cursor: pointer;
+      padding: 3%;
+      font-size: 24px;
+    }
+  </style>
+  <body>
+    <div id="popup" class="popup">
+      <div onclick="closepopup()" class="close"></div>
+    </div>
+    <!-- container 밖에다 popup -->
+    <div class="container">
+      <button onclick="openPopup()">확인</button>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- * 제이쿼리 장점 -->
+    <!-- 1. 비동기 통신 지원
+         2. 같은 동작을 짧은 코드로 구현 
+         3. 구버전 브라우저 지원 -->
+
+    <script>
+      function closepopup() {
+        // 바닐라 js 문법
+        // document.getElementsById("popup").style.display = "none";
+        $("#popup").hide();
+        // $("#popup").css("display", "none");
+        // class 이름이 container인 태그 안에 해당 태그를 추가
+        $(".container").append('<button onclick="openPopup()">취소</button>');
+      }
+      function openPopup() {
+        //   var style = document.getElementById("popup").style.display;
+        var style = $("#popup").css("display");
+
+        if (style == "none") {
+          //   document.getElementById("popup").style.display = "block";
+          $("popup").show();
+          $("#popup").css("display", "block");
+          return true;
+          //    A == B : A와 B는 같다.
+          //    A === B : A와 B는 같고 자료형도 같다
+          //    var a = "1" var a1 = 1
+          //    a == a1 : true
+          //    a === a1 false
+        }
+      }
+    </script>
+  </body>
+</html>
